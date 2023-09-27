@@ -11,7 +11,7 @@
     cx_client_id: ${{secrets.CX_CLIENTID}}
     # Secret key for AST portal authentication
     cx_client_secret: ${{secrets.CX_CLIENTSECRET}}
-    additional_params
+    additional_params: --report-format sarif --output-path .
     # Select a Checkmarx Project Name
     project_name: # optional, default is ${{ github.repository }}
     # Branch name
